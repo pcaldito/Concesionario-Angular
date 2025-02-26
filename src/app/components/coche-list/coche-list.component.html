@@ -1,0 +1,17 @@
+<h2>Lista de Coches</h2>
+<ul>
+  <li appAppCoche *ngFor="let coche of coches">
+    {{ coche.marca }} - {{ coche.modelo }} - {{coche.anio}}
+  </li>
+</ul>
+
+<h2>Lista de Coches - CRUD</h2>
+<ul>
+  <li *ngFor="let coche of coches">
+    <span>{{ coche.marca | miPipe}} - {{ coche.modelo }} - {{ coche.anio }}</span>
+
+    <button (click)="deleteCoche(coche.id)">❌ Eliminar</button>
+    <button (click)="editCoche(coche.id)"> Editar</button>
+    
+  </li>
+</ul>
