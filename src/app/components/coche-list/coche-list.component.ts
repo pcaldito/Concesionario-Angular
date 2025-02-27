@@ -11,7 +11,7 @@ export class CocheListComponent {
     coches:any[]=[];
     newmarca:string ='';
     newmodelo:string='';
-    newanio:number=0;
+    newanio:number | undefined;
 
     constructor(private cocheService: CocheServiceService) {}
 
@@ -29,7 +29,7 @@ export class CocheListComponent {
         this.cocheService.addCoche(this.newmarca, this.newmodelo, this.newanio);
         this.newmarca = '';
         this.newmodelo = '';
-        this.newanio = 0;
+        this.newanio ;
       }
     }
 

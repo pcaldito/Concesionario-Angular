@@ -7,6 +7,7 @@ import { CocheListComponent } from './components/coche-list/coche-list.component
 import { AppCocheDirective } from './directives/app-coche.directive';
 import { MiPipePipe } from './pipes/mi-pipe.pipe';
 import { CocheRoutingComponent } from './components/coche-routing/coche-routing.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CocheRoutingComponent } from './components/coche-routing/coche-routing.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
