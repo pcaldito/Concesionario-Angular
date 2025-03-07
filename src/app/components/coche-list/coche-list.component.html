@@ -1,9 +1,12 @@
+<div class="container">
 <h2>Lista de Coches</h2>
 <ul>
   <li appAppCoche *ngFor="let coche of coches">
     {{ coche.marca }} - {{ coche.modelo }} - {{coche.anio}}
   </li>
 </ul>
+
+<hr>
 
 <h2>Añadir Coches</h2>
   <p>Nombre de la marca</p>
@@ -13,6 +16,8 @@
   <p>Año de fabricacion</p>
   <input [(ngModel)]="newanio"><br><br>
   <button (click)="addCoche()">Añadir coche</button>
+
+  <hr>
 
 <h2>Lista de Coches - CRUD</h2>
 <ul>
@@ -24,3 +29,4 @@
     
   </li>
 </ul>
+</div>
